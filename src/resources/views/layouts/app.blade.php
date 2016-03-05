@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64399123-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
     <title>CRUDdy.io</title>
 
     <!-- Fonts -->
@@ -50,7 +60,8 @@
                     <li><a target="_new" href="https://github.com/Askedio"><em class="fa fa-github"></em></a></li>
                     <li><a target="_new" href="https://asked.io">Made By Asked.io</a></li>
                     <li><a target="_new" href="https://github.com/Askedio/jQuery-Cruddy">jQuery-CRUDdy</a></li>
-                    <li><a target="_new" href="https://github.com/Askedio/laravel-CRUDdy">laravel-CRUDdy</a></li>
+                    <li><a target="_new" href="https://github.com/Askedio/Laravel5-API-Controller">laravel-CRUDdy</a></li>
+                    <li><a target="_new" href="https://github.com/Askedio/Laravel-5-CRUD-Example"><em class="fa fa-code-fork"></em></a></li>
                 </ul>
             </div>
 
