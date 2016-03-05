@@ -127,6 +127,12 @@
           </div>
         </div>
 
+        <script id="no-results" type="text/x-jsrender">
+          <tr>
+            <td colspan="5"><strong>No Results Found.</strong></td>
+          </tr>
+        </script>
+
         <script id="row-item" type="text/x-jsrender">
           <tr>
             <td align="center">

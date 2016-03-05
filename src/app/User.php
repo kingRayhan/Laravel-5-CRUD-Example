@@ -30,8 +30,10 @@ class User extends Authenticatable
 
     protected $rules = [
       'update' => [
+        'email' => 'email|required|unique:users,email',
       ],
       'create' => [
+        'email' => 'email|required|unique:users,email',
       ],
     ];
 

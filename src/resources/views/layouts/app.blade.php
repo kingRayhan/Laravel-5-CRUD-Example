@@ -13,7 +13,7 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.rawgit.com/Askedio/jQuery-Cruddy/master/src/css/jquery-cruddy.css" rel="stylesheet">
+    <link href="https://rawgit.com/Askedio/jQuery-Cruddy/master/src/css/jquery-cruddy.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
@@ -53,8 +53,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.73/jsrender.min.js"></script>
-    <script src="https://cdn.rawgit.com/Askedio/jQuery-Cruddy/master/src/js/jquery-cruddy.js"></script>
+    <script src="https://rawgit.com/Askedio/jQuery-Cruddy/master/src/js/jquery-cruddy.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+
+    
+    <script>
+    </script>
 
     <script>
       $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
