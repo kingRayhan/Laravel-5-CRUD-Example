@@ -149,14 +149,4 @@
 
     </div>
 </div>
-
-
-<script>
-  $('.container-user').cruddy({
-
-  });
-</script>
-
-
-
 @endsection
