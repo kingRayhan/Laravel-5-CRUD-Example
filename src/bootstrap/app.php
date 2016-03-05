@@ -1,4 +1,9 @@
 <?php
+// allow origin
+header('Access-Control-Allow-Origin: *');
+// add any additional headers you need to support here
+header('Access-Control-Allow-Headers: Origin, Content-Type');
+
 
 /*
 |--------------------------------------------------------------------------
