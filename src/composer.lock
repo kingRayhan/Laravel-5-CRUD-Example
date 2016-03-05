@@ -4,8 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea1fee525914154e6d6bbf071697b5a1",
+    "hash": "1b6dfc4190522119e23ee8765cfbf482",
     "packages": [
+        {
+            "name": "askedio/laravel5-api-controller",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Askedio/Laravel5-API-Controller.git",
+                "reference": "e893c9074476e49aea3ce87fc9c0d6bc4c7bad3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Askedio/Laravel5-API-Controller/zipball/e893c9074476e49aea3ce87fc9c0d6bc4c7bad3e",
+                "reference": "e893c9074476e49aea3ce87fc9c0d6bc4c7bad3e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.2.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "laravel/laravel": "5.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Askedio\\Laravel5ApiController\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Generic Controller for Modals",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2016-03-05 03:41:48"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -3005,7 +3043,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "askedio/laravel5-api-controller": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
