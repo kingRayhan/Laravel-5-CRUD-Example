@@ -57,6 +57,7 @@
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 
     <script>
+      $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
       $('.container-user').cruddy();
     </script>
 </body>
