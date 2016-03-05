@@ -50,7 +50,7 @@
                     <li><a target="_new" href="https://github.com/Askedio"><em class="fa fa-github"></em></a></li>
                     <li><a target="_new" href="https://asked.io">Made By Asked.io</a></li>
                     <li><a target="_new" href="https://github.com/Askedio/jQuery-Cruddy">jQuery-CRUDdy</a></li>
-                    <li><a target="_new" href="https://github.com/Askedio/Laravel5-API-Controller">laravel-CRUDdy</a></li>
+                    <li><a target="_new" href="https://github.com/Askedio/laravel-CRUDdy">laravel-CRUDdy</a></li>
                 </ul>
             </div>
 

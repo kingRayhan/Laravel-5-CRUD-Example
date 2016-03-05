@@ -3,6 +3,7 @@
 header('Access-Control-Allow-Origin: *');
 // add any additional headers you need to support here
 header('Access-Control-Allow-Headers: Origin, Content-Type');
+header('Access-Control-Allow-Methods: GET, PATCH, PUT, DELETE, POST');
 
 
 /*
