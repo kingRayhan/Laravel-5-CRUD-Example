@@ -61,7 +61,7 @@
               </div>
             </div>
           </script>
-          <form action="/api/admin/user" class="create-edit"></form>
+          <form action="api/admin/user" class="create-edit"></form>
           </div>
         </div>
        
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="panel-body">
-            <table class="table table-striped table-bordered table-list" data-url="/api/admin/user">
+            <table class="table table-striped table-bordered table-list" data-url="api/admin/user">
               <thead>
                 <th><em class="fa fa-cog"></em></th>
                 <th class="hidden-xs" data-col="id">ID <em class="fa fa-fw fa-sort pull-right em-sort"></th>
@@ -130,8 +130,8 @@
         <script id="row-item" type="text/x-jsrender">
           <tr>
             <td align="center">
-              <button type="button" class="btn btn-default" data-action="read" data-href="/api/admin/user/@{{:id}}" data-toggle="modal" data-target="#modal-create-edit"><em class="fa fa-pencil"></em></button>
-              <button type="button" class="btn btn-danger" data-action="delete" data-href="/api/admin/user/@{{:id}}"><em class="fa fa-trash"></em></button>
+              <button type="button" class="btn btn-default" data-action="read" data-href="api/admin/user/@{{:id}}" data-toggle="modal" data-target="#modal-create-edit"><em class="fa fa-pencil"></em></button>
+              <button type="button" class="btn btn-danger" data-action="delete" data-href="api/admin/user/@{{:id}}"><em class="fa fa-trash"></em></button>
             </td>
             <td class="hidden-xs">@{{:id}}</td>
             <td>@{{:name}}</td>
