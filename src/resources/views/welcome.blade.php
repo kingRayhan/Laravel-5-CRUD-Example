@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="panel-body">
-            <table class="table table-striped table-bordered table-list" data-url="api/admin/user">
+            <table class="table table-striped table-bordered table-list" data-href="api/admin/user">
               <thead>
                 <th><em class="fa fa-cog"></em></th>
                 <th class="hidden-xs" data-col="id">ID <em class="fa fa-fw fa-sort pull-right em-sort"></th>
