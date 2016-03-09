@@ -54,9 +54,4 @@ class User extends Authenticatable
         ];
     }
 
-    // just need relations now?
-    // change sort to be json spec, - for asc/desc and field
-    // add ability to adjust what fields are shown in the query
-
-
 }
