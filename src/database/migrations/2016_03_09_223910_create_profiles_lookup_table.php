@@ -14,7 +14,7 @@ class CreateProfilesLookupTable extends Migration
     {
         Schema::create('profiles_user', function (Blueprint $table) {
             $table->integer('user_id');
-            $table->integer('profile_id');
+            $table->integer('profiles_id');
         });
     }
 
