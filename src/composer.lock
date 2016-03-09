@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Askedio/Laravel5-API-Controller.git",
-                "reference": "e893c9074476e49aea3ce87fc9c0d6bc4c7bad3e"
+                "reference": "2ee6b29a9b73ede5b6b82e64329d8dd11b6060c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Askedio/Laravel5-API-Controller/zipball/e893c9074476e49aea3ce87fc9c0d6bc4c7bad3e",
-                "reference": "e893c9074476e49aea3ce87fc9c0d6bc4c7bad3e",
+                "url": "https://api.github.com/repos/Askedio/Laravel5-API-Controller/zipball/2ee6b29a9b73ede5b6b82e64329d8dd11b6060c8",
+                "reference": "2ee6b29a9b73ede5b6b82e64329d8dd11b6060c8",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2016-03-05 03:41:48"
+            "time": "2016-03-08 17:30:34"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -473,16 +473,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.17",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca"
+                "reference": "b334d6c5f95364948e06d2f620ab93d084074c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
-                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b334d6c5f95364948e06d2f620ab93d084074c6e",
+                "reference": "b334d6c5f95364948e06d2f620ab93d084074c6e",
                 "shasum": ""
             },
             "require": {
@@ -552,7 +552,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2016-02-19 15:35:38"
+            "time": "2016-03-07 21:01:43"
         },
         {
             "name": "monolog/monolog",

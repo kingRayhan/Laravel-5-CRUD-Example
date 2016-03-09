@@ -44,4 +44,19 @@ class User extends Authenticatable
         ],
     ];
 
+    protected $id = 'id';
+
+
+    public function transform(User $user) {
+        return [
+            'name' => $user->name,
+            'email' => $user->email,
+        ];
+    }
+
+    // just need relations now?
+    // change sort to be json spec, - for asc/desc and field
+    // add ability to adjust what fields are shown in the query
+
+
 }
