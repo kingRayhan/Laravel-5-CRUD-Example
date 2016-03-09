@@ -32,7 +32,6 @@ class Kernel extends HttpKernel
 
         'api' => [
             'throttle:60,1',
-            \Askedio\Laravel5ApiController\Http\Middleware\JsonApiMiddleware::class,
         ],
     ];
 

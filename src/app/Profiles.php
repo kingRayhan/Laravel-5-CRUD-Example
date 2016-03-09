@@ -3,12 +3,20 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class Profiles extends Model
 {
 
     use \Askedio\Laravel5ApiController\Traits\ApiTrait;
     use \Askedio\Laravel5ApiController\Traits\SearchableTrait;
+
+
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +24,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'phone',
     ];
 
     /**
@@ -25,36 +33,25 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
     ];
 
     protected $rules = [
-      'update' => [
-        'email' => 'email|unique:users,email',
-      ],
-      'create' => [
-        'email' => 'email|required|unique:users,email',
-      ],
     ];
 
-
+    protected $searchable = [
+        'columns' => [
+            'profile.phone' => 10,
+        ],
+    ];
 
     protected $id_field = 'id';
 
 
-    public function transform(User $user) {
+    public function transform(Profiles $profile) {
         return [
-            'id' => $user->id,
-            'name' => $user->name,
-            'email' => $user->email,
+            'id' => 'iii',
+            'phone' => 'iii',
         ];
     }
-
-
-    public function profiles()
-    {
-        return $this->belongsToMany('App\Profiles');
-    }
-
 
 }
