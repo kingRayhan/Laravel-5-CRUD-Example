@@ -29,9 +29,9 @@
                     <label class="col-md-4 control-label">Full Name</label>
 
                     <div class="col-md-6">
-                        <input name="name" class="form-control" value="@{{:name}}">
+                        <input name="name" class="form-control" value="@{{:attributes.name}}">
                         <span class="help-block hide">
-                            <strong>ii</strong>
+                            <strong></strong>
                         </span>                                
                     </div>
                 </div>
@@ -40,9 +40,9 @@
                     <label class="col-md-4 control-label">E-Mail Address</label>
 
                     <div class="col-md-6">
-                        <input name="email" class="form-control" value="@{{:email}}">
+                        <input name="email" class="form-control" value="@{{:attributes.email}}">
                         <span class="help-block hide">
-                            <strong>ii</strong>
+                            <strong></strong>
                         </span>                                
                     </div>
                 </div>
@@ -140,16 +140,16 @@
               <button type="button" class="btn btn-danger" data-action="delete" data-href="api/admin/user/@{{:id}}"><em class="fa fa-trash"></em></button>
             </td>
             <td class="hidden-xs">@{{:id}}</td>
-            <td>@{{:name}}</td>
-            <td>@{{:email}}</td>
+            <td>@{{:attributes.name}}</td>
+            <td>@{{:attributes.email}}</td>
           </tr>
         </script>
 
         <script id="list-pagination" type="text/x-jsrender">
           <ul class="pagination pull-right">
-            @{{if prev_page_url}}<li><span data-href="@{{:prev_page_url}}">&laquo;</span></li>@{{/if}}
-            <li><span disabled>@{{:current_page}} of @{{:last_page}}</span></li>
-            @{{if next_page_url}}<li><span data-href="@{{:next_page_url}}">&raquo;</span></li>@{{/if}}
+            @{{if links.prev}}<li><span data-href="@{{:links.prev}}">&laquo;</span></li>@{{/if}}
+            <li><span disabled>@{{:meta.current_page}} of @{{:meta.total_pages}}</span></li>
+            @{{if links.next}}<li><span data-href="@{{:links.next}}">&raquo;</span></li>@{{/if}}
           </ul>
         </script>
 
