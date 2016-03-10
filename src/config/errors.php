@@ -30,6 +30,18 @@ return [
 
 
 
+    'not-acceptable' => [
+        'title'  => 'Not Acceptable',
+        'detail' => 'Accept was not ' . config('jsonapi.content-type', 'application/vnd.api+json'),
+    ],
+
+    'unsupported-media-type' => [
+        'title'  => 'Unsupported Media Type',
+        'detail' => 'Content-Type was not' . config('jsonapi.content-type', 'application/vnd.api+json'),
+    ],
+
+
+
     'invalid_sort' => [
         'title'  => 'Invalid Query Parameter.',
         'detail' => 'The resource `%s` does not have an `%s` sorting option.',
@@ -54,16 +66,13 @@ return [
         'source' => '%s',
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | User Errors
-    |--------------------------------------------------------------------------
-    */
 
-    'user_does_not_belong_to_group' => [
-        'title'  => 'The user does not belong to the group',
-        'detail' => 'User %s does not belong to Group %s'
+    'invalid_attribute' => [
+        'title' => 'Invalid Attribute',
+        'detail' => '%s',
     ],
+
+
 
 
 

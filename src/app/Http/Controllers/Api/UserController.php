@@ -8,6 +8,6 @@ use Askedio\Laravel5ApiController\Helpers\ApiHelper;
 
 class UserController extends BaseController
 {
-    public $modal = '\App\User';
+    public $modal = \App\User::class;
 
 }

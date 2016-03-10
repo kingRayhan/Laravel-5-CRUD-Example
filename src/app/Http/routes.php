@@ -29,14 +29,6 @@ Route::group(['middleware' => ['web']], function () {
   });
 });
 
-
-Route::group(['prefix' => 'api', 'middleware' => ['api']], function()
-{
+Route::group(['prefix' => 'api', 'middleware' => ['api']], function() {
   Route::resource('admin/user', 'Api\UserController');
-});
-
-
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-    Route::get('/home', 'HomeController@index');
 });
