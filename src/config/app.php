@@ -157,6 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Askedio\Laravel5ApiController\Providers\GenericServiceProvider::class,
+        Anbu\Profiler\Providers\AnbuServiceProvider::class,
 
     ],
 
