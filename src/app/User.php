@@ -58,7 +58,7 @@ class User extends Authenticatable
     public function transform(User $user) {
         return [
             'id' => $user->id,
-            'name' => '123'.$user->name,
+            'name' =>  $user->name,
             'email' => $user->email,
         ];
     }
