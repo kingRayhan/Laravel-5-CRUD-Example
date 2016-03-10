@@ -28,6 +28,14 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+
+    protected $includes = [
+        'profiles',
+        'addresses',
+    ];
+
+
+
     protected $rules = [
       'update' => [
         'email' => 'email|unique:users,email',
@@ -37,15 +45,20 @@ class User extends Authenticatable
       ],
     ];
 
+    protected $searchable = [
+        'columns' => [
+            'users.name' => 10,
+            'users.email' => 5,
+        ],
+    ];
 
-
-    protected $id_field = 'id';
+    protected $primaryKey = 'id';
 
 
     public function transform(User $user) {
         return [
             'id' => $user->id,
-            'name' => $user->name,
+            'name' => '123'.$user->name,
             'email' => $user->email,
         ];
     }
@@ -54,6 +67,11 @@ class User extends Authenticatable
     public function profiles()
     {
         return $this->belongsToMany('App\Profiles');
+    }
+
+    public function addresses()
+    {
+        return $this->belongsToMany('App\Addresses');
     }
 
 

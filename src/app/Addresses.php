@@ -5,15 +5,13 @@ namespace App;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 
-class Profiles extends Model
+class Addresses extends Model
 {
 
     use \Askedio\Laravel5ApiController\Traits\ApiTrait;
     use \Askedio\Laravel5ApiController\Traits\SearchableTrait;
 
-    protected $includes = [
-        'profiles',
-    ];
+
 
     public function user()
     {
@@ -26,7 +24,7 @@ class Profiles extends Model
      * @var array
      */
     protected $fillable = [
-        'phone',
+        'city',
     ];
 
     /**
@@ -42,18 +40,18 @@ class Profiles extends Model
 
     protected $searchable = [
         'columns' => [
-            'profile.phone' => 10,
+            'profile.city' => 10,
         ],
     ];
 
     protected $primaryKey = 'id';
 
-
-    public function transform(Profiles $profile) {
+    public function transform(Addresses $profile) {
         return [
             'id' => 'iii',
-            'phone' => 'iii',
+            'city' => 'iii',
         ];
     }
+ 
 
 }
