@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
 
-    use \Askedio\Laravel5ApiController\Traits\ApiTrait;
+    use \Askedio\Laravel5ApiController\Traits\ModelTrait;
     use \Askedio\Laravel5ApiController\Traits\SearchableTrait;
 
     /**

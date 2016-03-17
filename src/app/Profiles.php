@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Profiles extends Model
 {
 
-    use \Askedio\Laravel5ApiController\Traits\ApiTrait;
+    use \Askedio\Laravel5ApiController\Traits\ModelTrait;
     use \Askedio\Laravel5ApiController\Traits\SearchableTrait;
 
     protected $includes = [

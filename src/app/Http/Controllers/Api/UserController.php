@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers\Api;
 
-use Askedio\Laravel5ApiController\Helpers\ControllerHelper;
-use Askedio\Laravel5ApiController\Http\Controllers\BaseController;
-use Askedio\Laravel5ApiController\Helpers\ApiHelper;
+use Illuminate\Routing\Controller as BaseController;
 
 class UserController extends BaseController
 {
-    public $modal = \App\User::class;
+
+    use \Askedio\Laravel5ApiController\Traits\ControllerTrait;
+    public $model = \App\User::class;
+
+    /* Optional */
+    public $version = 'v1';
 
 }
