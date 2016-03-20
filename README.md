@@ -4,11 +4,12 @@ This is a preconfigured example for [laravel-cruddy](https://github.com/Askedio/
 
 * clone
 * composer install
-* configure .env
+* configure .env with a database
 * composer migrate
 * php artisan serv
 
 
-Once installed load the [Postman collection](https://raw.githubusercontent.com/Askedio/laravel-Cruddy/master/tests/Main.json.postman_collection) in `vendor/askedio/laravel-cruddy/tests`.
+* Load the [Postman collection](https://www.getpostman.com/collections/f67615f76d74506553d6) and run the tests.
+* Run vendor\bin\phpunit to run all of the `phpunit` tests.
 
-Run the tests.
+
