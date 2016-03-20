@@ -9,6 +9,6 @@ This is a preconfigured example for [laravel-cruddy](https://github.com/Askedio/
 * php artisan serv
 
 
-Once installed load the Postman dump in `vendor/askedio/laravel-cruddy/tests`.
+Once installed load the [Postman collection](https://raw.githubusercontent.com/Askedio/laravel-Cruddy/master/tests/Main.json.postman_collection) in `vendor/askedio/laravel-cruddy/tests`.
 
 Run the tests.
