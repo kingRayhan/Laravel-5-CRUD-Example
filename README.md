@@ -1,5 +1,5 @@
-# Laravel-5-CRUD-Example
-A Laravel 5 Based JSON API CRUD Example
+# laravel-cruddy example.
+This is a preconfigured example for [laravel-cruddy](https://github.com/Askedio/laravel-Cruddy), a CRUD JSON API for Laravel 5.2.
 
 
 * clone
