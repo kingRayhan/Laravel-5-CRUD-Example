@@ -6,8 +6,9 @@ This is a preconfigured example for [laravel-cruddy](https://github.com/Askedio/
 * composer install
 * configure .env
 * composer migrate
-* composer db:seed
 * php artisan serv
 
 
-once installed load the postman dump in vendor/askedio/laravel-cruddy/tests  
+Once installed load the Postman dump in `vendor/askedio/laravel-cruddy/tests`.
+
+Run the tests.
