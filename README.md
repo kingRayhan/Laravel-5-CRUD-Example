@@ -2,14 +2,29 @@
 This is a preconfigured example for [laravel-cruddy](https://github.com/Askedio/laravel-Cruddy), a CRUD JSON API for Laravel 5.2.
 
 
-* clone
-* composer install
+# Install
+* clone this repo
+
+~~~
+composer install
+~~~
+
 * configure .env with a database
-* composer migrate
-* php artisan serv
+
+~~~
+composer migrate
+php artisan serv
+~~~
+
+# Test
+
+Postman:
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/run-collection/f67615f76d74506553d6)
 
 
-* Load the [Postman collection](https://www.getpostman.com/collections/f67615f76d74506553d6) and run the tests.
-* Run vendor\bin\phpunit to run all of the `phpunit` tests.
+PHPUnit:
+~~~
+vendor\bin\phpunit
+~~~
 
 
