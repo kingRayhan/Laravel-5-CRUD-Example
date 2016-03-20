@@ -2,17 +2,14 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 
 class Profiles extends Model
 {
-
     use \Askedio\Laravel5ApiController\Traits\ModelTrait;
     use \Askedio\Laravel5ApiController\Traits\SearchableTrait;
 
     protected $includes = [
-        'profiles',
     ];
 
     public function user()
@@ -28,32 +25,4 @@ class Profiles extends Model
     protected $fillable = [
         'phone',
     ];
-
-    /**
-     * The attributes excluded from the model's JSON form.
-     *
-     * @var array
-     */
-    protected $hidden = [
-    ];
-
-    protected $rules = [
-    ];
-
-    protected $searchable = [
-        'columns' => [
-            'profile.phone' => 10,
-        ],
-    ];
-
-    protected $primaryKey = 'id';
-
-
-    public function transform(Profiles $profile) {
-        return [
-            'id' => 'iii',
-            'phone' => 'iii',
-        ];
-    }
-
 }

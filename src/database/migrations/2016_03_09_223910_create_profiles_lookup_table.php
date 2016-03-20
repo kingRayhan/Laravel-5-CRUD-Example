@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateProfilesLookupTable extends Migration
 {
@@ -12,7 +12,7 @@ class CreateProfilesLookupTable extends Migration
      */
     public function up()
     {
-        Schema::create('profiles_user', function (Blueprint $table) {
+        DB::connection()->getSchemaBuilder()->create('profiles_user', function (Blueprint $table) {
             $table->integer('user_id');
             $table->integer('profiles_id');
         });
@@ -25,6 +25,6 @@ class CreateProfilesLookupTable extends Migration
      */
     public function down()
     {
-         Schema::drop('profiles_user');
+        DB::connection()->getSchemaBuilder()->dropIfExists('profiles_user');
     }
 }

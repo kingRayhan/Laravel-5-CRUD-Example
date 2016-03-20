@@ -6,7 +6,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-
     use \Askedio\Laravel5ApiController\Traits\ModelTrait;
     use \Askedio\Laravel5ApiController\Traits\SearchableTrait;
 
@@ -28,51 +27,39 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-
     protected $includes = [
-        'profiles',
-        'addresses',
+        \App\Profiles::class,
     ];
 
-
-
     protected $rules = [
-      'update' => [
-        'email' => 'email|unique:users,email',
-      ],
-      'create' => [
-        'email' => 'email|required|unique:users,email',
-      ],
+        'update' => [
+            'email' => 'email|unique:users,email',
+        ],
+        'create' => [
+            'email' => 'email|required|unique:users,email',
+        ],
     ];
 
     protected $searchable = [
         'columns' => [
-            'users.name' => 10,
-            'users.email' => 5,
+            'users.name'       => 10,
+            'users.email'      => 5,
         ],
     ];
 
     protected $primaryKey = 'id';
 
-
-    public function transform(User $user) {
+    public function transform(User $user)
+    {
         return [
-            'id' => $user->id,
-            'name' =>  $user->name,
+            'id'    => $user->id,
+            'name'  => $user->name,
             'email' => $user->email,
         ];
     }
 
-
     public function profiles()
     {
-        return $this->belongsToMany('App\Profiles');
+        return $this->hasMany('App\Profiles');
     }
-
-    public function addresses()
-    {
-        return $this->belongsToMany('App\Addresses');
-    }
-
-
 }
