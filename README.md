@@ -18,7 +18,6 @@ php artisan serv
 
 # Test
 
-Postman:
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/run-collection/f67615f76d74506553d6)
 
 
