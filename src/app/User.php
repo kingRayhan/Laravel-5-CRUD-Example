@@ -52,9 +52,9 @@ class User extends Authenticatable
     public function transform(User $user)
     {
         return [
-            'id'    => $user->id,
-            'name'  => $user->name,
-            'email' => $user->email,
+            'id'    => htmlentities($user->id),
+            'name'  => htmlentities($user->name),
+            'email' => htmlentities($user->email),
         ];
     }
 
