@@ -13,7 +13,7 @@ composer install
 
 ~~~
 composer migrate
-php artisan serv
+php artisan serve
 ~~~
 
 # Test
